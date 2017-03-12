@@ -1,8 +1,8 @@
 # chance to draw at least 1 card in opening hand
 
 N = 30  # Total population from which to draw
-m = 6  # Number of successes in deck
-n = 5   # Number of draws
+m = 3  # Number of successes in deck
+n = 7   # Number of draws
 k = 0   # Successes desired
 
 import scipy.stats as ss
