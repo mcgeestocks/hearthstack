@@ -2,7 +2,7 @@
  To Do: 
  - Clean up Readme
  - Graph Pandas
-###Cumulative Distribution Function
+##Cumulative Distribution Function
 
 What is the chance to draw at least `2 buffs` from a deck containing `4 buffs` after `turn 2` after `going first`.
 
@@ -21,10 +21,8 @@ print (1-p)
 ```
 The approach above yields `11.877%` chance to draw after `turn 2`
 
----
 
-
-### Survival function (also defined as 1 - cdf):
+## Survival function (also defined as 1 - cdf):
 
 What is the chance to draw at least `1 6-Drop` from a deck containing `3 6-Drops` after `turn 5` after `going first`.
 
