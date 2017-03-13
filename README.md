@@ -1,7 +1,10 @@
 # Hearthstack
- To Do: 
- - Clean up Readme
- - Graph Pandas
+ ####To Do: 
+- Handle Mana Cost +8 
+- Graph Mana Curve 
+- Graph Draw Odds for each Mana Cost 
+- Add Input Function for Combos
+- Graph Draw Odds for Combos
 ##Cumulative Distribution Function
 
 What is the chance to draw at least `2 buffs` from a deck containing `4 buffs` after `turn 2` after `going first`.

@@ -1,19 +1,14 @@
-import requests
-import pandas as pd
+import numpy as np
+from helpers import *
 
-url = 'https://api.hearthstonejson.com/v1/17994/enUS/cards.collectible.json'
-r = requests.get(url)
-jsn = r.json()
+card_collection = build_collection()
+deck = import_deck()
+deck = add_cost(card_collection, deck)
 
-print(jsn[1])
+#Calculate Mana Curve
 
-collection = {}
+mana_curve = (deck.groupby(['cost']).agg({'number':[np.sum]}))
 
-for item in jsn:
-    collection[item.get('name', 'null')] = item.get('cost', 'null')
-
-df = pd.DataFrame.from_dict(collection, orient='index')
-print(df)
-
-
+mana_curve = [tuple(x) for x in mana_curve.to_records(index=True)]
+print(mana_curve)
 
