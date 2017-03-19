@@ -26,7 +26,7 @@ def build_collection(url='https://api.hearthstonejson.com/v1/17994/enUS/cards.co
 
     return df
 
-def import_deck(file='example_names.txt'):
+def import_deck(file):
     '''
 
     expected format look like
@@ -75,11 +75,11 @@ def draw_odds(decksize, in_deck, draws, success):
     p = draw.cdf(k)
     return 1 - p
 
-def draw_table(mana_curve, n):
-    # Chance to draw 1 DataFrame
+def draw_table(mana_curve, n,t):
+
     container = {}
     for mana, count in mana_curve:
-        ods = [draw_odds(30, count, x + 3, n) for x in range(11)]
+        ods = [draw_odds(30, count, x + t, n) for x in range(11)]
         container[mana] = ods
 
     return pd.DataFrame(container)
