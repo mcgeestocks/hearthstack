@@ -1,10 +1,8 @@
 # Hearthstack
  ####To Do: 
-- Handle Mana Cost +8 
-- Graph Mana Curve 
-- Graph Draw Odds for each Mana Cost 
-- Add Input Function for Combos
-- Graph Draw Odds for Combos
+
+
+
 ##Cumulative Distribution Function
 
 What is the chance to draw at least `2 buffs` from a deck containing `4 buffs` after `turn 2` after `going first`.
@@ -23,7 +21,6 @@ print (1-p)
 
 ```
 The approach above yields `11.877%` chance to draw after `turn 2`
-
 
 ## Survival function (also defined as 1 - cdf):
 
