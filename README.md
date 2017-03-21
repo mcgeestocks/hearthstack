@@ -1,5 +1,5 @@
 # Hearthstack
- ####To Do: 
+ ##To Do: 
  - error handling
  - invalid cards names
  - integrate setuptools
@@ -25,5 +25,5 @@ print (1-p)
 The approach above yields `11.877%` chance to draw after `turn 2`
 
 
-#####Suggested Reading:
+##Suggested Reading:
 http://www.gatheringmagic.com/chrismascioli-100512-of-math-and-magic-part-1-the-hypergeometric-distribution/
